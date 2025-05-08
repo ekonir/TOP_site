@@ -1,0 +1,253 @@
+body{
+width : 1250px ; /* Pour centrer la page */
+margin-top: 20px;/* Pour éviter de coller avec le haut du navigateur */
+margin-left: 50px;
+margin-right: 50px;
+margin-bottom: 20px;/* Idem pour le bas du navigateur */
+background-image: url("DesignSite/Etudiants_Application/images/fond1.png"); /* Image de fond */
+background-color: #b6b3b3;
+}
+h1 {
+  font-size: 50px;
+ text-decoration-line: underline ;
+ color:white;
+ width:500px; /* largeur du bloc */ 
+height: 80px; /* hauteur du bloc */ 
+}
+h2 {
+  text-align: center;
+  color:white;
+  text-decoration-line: underline ;
+ }
+h3 {
+  font-size: 20px;
+ text-align: left;
+ color: #cd3b30;
+}
+h4 {
+  text-align: center;
+  color:black;
+  text-decoration-line: underline ;
+ }
+
+
+nav ul {
+  list-style-type: none;  /* Supprime les puces de la liste */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;  /* Aligne les éléments à gauche */
+}
+.Bouton{ /* Style des boutons principaux (Classe .Bouton) */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #cd3b30;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.35s ease;
+  margin-right: 10px;  /* Espacement entre les boutons */
+  text-align: center;
+}
+.Bouton:hover {
+  background-color: #9e2a24;  /* Change la couleur au survol */
+}
+.dropdown { /* Menu déroulant */
+  position: relative;
+}
+.dropdown-content {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;  /* Positionne le sous-menu juste en dessous du bouton principal */
+  left: 0;
+  display: none;
+  background-color: #9e2a24;  /* Couleur de fond du sous-menu */
+  width: 200px;  /* Largeur du sous-menu */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* Ombre sous le sous-menu */
+}
+.dropdown:hover .dropdown-content { /* Affiche le sous-menu lors du survol de l'élément parent */
+  display: block;
+}
+.Bouton_2 { /* Style des éléments du sous-menu (Bouton_2) */
+  display: block;  /* Chaque élément de sous-menu est un bloc */
+  padding: 10px;
+  background-color: #9e2a24;  /* Couleur de fond des éléments du sous-menu */
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  border-radius: 5px;
+  font-weight: normal;
+  transition: background-color 0.3s ease;
+}
+.Bouton_2:hover { /* Changement de couleur des éléments du sous-menu au survol */
+  background-color: #7a1d16;  /* Change la couleur au survol */
+}
+
+nav, h1 
+{
+display: inline-block; /* pour les positionner côte à côte */ 
+vertical-align: top; /* Tous deux alignés en haut */
+}
+
+
+article, aside { /* propriétés pour les 2 attributs */
+display: inline-block; /* pour les positionner côte à côte */ 
+vertical-align: top; /* Tous deux alignés en haut */
+text-align: justify; /* texte justifié (aligné à droite et à gauche) */
+}
+aside{
+  position: relative;
+}
+
+.image_accueil{ /* propriétés de la photo acceuil */
+margin-left: 100px; 
+width: 350px;
+border-radius: 10px;
+position: relative;
+}
+.introduo {/* bloc : présentation du groupe , Accueil */
+font-size: 20px;
+width:500px; /* largeur du bloc */ 
+height: 100px; /* hauteur du bloc */ 
+margin-left: 150px;
+background-color: #737373;
+border-radius: 5px;
+padding: 10px; /* marge intérieure pour le texte */
+overflow: auto;
+color: white;
+}
+.introvisit {/* bloc : introduction groupe / site , Accueil */
+
+  font-size: 20px;
+margin-top: 50px;
+margin-left: 50px;
+width:500px; /* largeur du bloc */ 
+height: 170px; /* hauteur du bloc */ 
+background-color: #737373;
+border-radius: 5px;
+padding: 10px; /* marge intérieure pour le texte */
+color: white;
+}
+
+
+
+.presentation_Tyler, .presentation_Josh { /* propriétés pour les 2 attributs */
+display: inline-block; /* pour les positionner côte à côte */ 
+vertical-align: top; /* Tous deux alignés en haut */
+text-align: justify; /* texte justifié (aligné à droite et à gauche) */
+width:550px; /* largeur du bloc */ 
+height: 300px; /* hauteur du bloc */
+background-color: #737373;
+  font-size: 20px;
+  text-align: justify; 
+  border-radius: 5px;
+  padding: 10px; /* marge intérieure pour le texte */
+  color:black;
+}
+.presentation_Tyler{
+  margin-left: 35px;
+}
+.Portrait {
+  float: right; 
+  align-items: flex-start;
+  width: 150px;
+  border-radius: 5px;
+border: 2px solid white;
+}
+
+
+.Pres_album { /* propriétés des albums , presentation */
+margin-left: 25px; width: 150px;
+}
+
+
+.Collection_album-CD {/* propriétés des albums CD, collection */
+margin-left: 50px; 
+width: 200px ; /* largeur du bloc */
+height : 150px; /* hauteur du bloc */ 
+border: 1px solid white;
+}
+.Collection_album {/* propriétés des albums Vinyle , collection */
+margin-left: 50px; 
+width: 200px ; /* largeur du bloc */
+height : 150px; /* hauteur du bloc */ 
+border: 1px solid white;
+}
+.Collection_album_limited {/* propriétés des albums Vinyle edition limitée, collection */
+margin-left: 50px; 
+width: 200px ; /* largeur du bloc */
+height : 200px; /* hauteur du bloc */ 
+border: 1px solid white;
+}
+
+
+.vente_album {/* propriétés des albums , ventes */
+width: 200px;
+border: 1px solid white;
+}
+.vente_album_2 {/* propriétés des albums , ventes */
+width: 190px;
+border: 1px solid white;
+}
+.texte_tabl {/* texte invisible*/
+color: #b6b3b3
+}
+
+
+.table_dates , .image_concert{
+  display: inline-block;
+ font-size: 15px;
+}
+.image_concert{
+  margin-top: 100px;
+  margin-left: 10px; 
+  width: 350px;
+border-radius: 10px;
+position: relative;
+}
+
+
+.Liens_Contact,.Reseau_Contact,.musique_Contact{
+  list-style-type: none;  /* Supprime les puces de la liste */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #9b9797;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.35s ease;
+  margin-right: 10px;  /* Espacement entre les boutons */
+  text-align: center;
+}
+.Liens_Contact:hover {
+  background-color: silver;  /* Change la couleur au survol */
+}
+.Reseau_Contact:hover {
+  background-color: silver;  /* Change la couleur au survol */
+}
+.musique_Contact:hover {
+  background-color: silver;  /* Change la couleur au survol */
+}
+
+
+footer{
+  position: relative;
+      bottom: 0;
+}
+.banniereclancy {
+  width: 1220px ; /* largeur du bloc */
+  height : 50px; /* hauteur du bloc */ 
+  text-align: center;
+}
